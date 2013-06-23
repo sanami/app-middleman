@@ -1,0 +1,16 @@
+---
+title: Welcome to Middleman
+---
+
+<div class="welcome">
+  <h3>Middleman is Watching</h3>
+
+  <ul>
+    <% sitemap.resources.each do |page| %>
+      <li>
+        <%= link_to page.destination_path, page.destination_path %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
